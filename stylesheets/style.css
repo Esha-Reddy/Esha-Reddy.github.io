@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*-------------------------
+
+Basic Structure
+
+----------------------*/
+
+#wrapper{
+	width: 960px;
+	padding: 5px;
+	margin: 20px auto;
+}
+
+#header{
+	height: 100px;
+}
+
+#sidebar {
+	float: left;
+	width: 300px;
+}
+
+#content {
+	float: right;
+	width: 600px;
+}
+
+#footer {
+	clear: both;
+}
+/*-------------------------
+
+COLORS AND FONTS
+color.adobe.com
+----------------------*/
+body {
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	color: #FFA0BE;
+	/*background-color: lavenderblush*/
+	background-image: url("../images/background-new.jpg"); 
+}
+#header, #content, #sidebar, #footer {
+	/*background-color: #CEFFC0;*/
+	background-color:rgba(206,255,192,0.80);
+	margin-bottom: 4px;
+	border: double;
+	border-radius: 8px;
+	border-color: grey;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+/*------------------------
+
+RESPONSIVE DESIGN
+
+------------------------*/
+@media screen and (max-width: 980px) {
+	
+}
+@media screen and (max-width: 700px){
+	
+}
+@media screen and (max-width: 480px){
+	
+}
+/* Phones */
+@media only screen
+	and (min-device-width: 320px)
+	and (max-device-width: 568px){
+		
+}
