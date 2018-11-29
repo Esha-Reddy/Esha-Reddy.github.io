@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<script type ="text/javascript">
+		//game code goes here
+		var words = [
+			
+			"popcorn", 
+			"fish",
+			"apple",
+			"cupcake",
+			"cookies",
+			"chocolate",
+			"chicken",
+			"lavender"
+		];
+		
+		var word = words[Math.floor(Math.random() * words.length)];
+		
+		// show the player their progress
+		var answerArray = [];
+		for (var o = 0; o < word.length; o++)  {
+			answerArray[o] = "_";
+		}
+		
+		var remainingLetters = word.length;
+		
+		//take input from the player
+		while (remainingLetters > 0) {
+		alert(answerArray.join(" "));
+		var guess = prompt("Guess a letter or click Cancel to stop playing.");
+		if (guess === null) {
+			break;
+		} else if (guess.length !== 1) {
+			alert("Please enter a single letter.");
+		
+		} else {
+			//update the game state with the guess
+			for (var p = 0; p < word.length; p++) {
+				if (word[p] === guess) {
+					answerArray[p] = guess;
+					remainingLetters--;
+				}
+			}
+		}
+	}
+		alert(answerArray.join(" "));
+		alert("Good job! The answer was " + word)
+		</script>
+</body>
+</html>
