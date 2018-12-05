@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.9 Fab Fabrics</title>
+</head>
+
+<body>
+	<table border="1">
+
+	<script type="text/javascript">
+			//table head
+			document.write("<tr><th>Color</th><th>Quantity</th><th>Cost</th></tr>")
+				function calculateSubtotal(numberOfRolls) {
+				  return numberOfRolls * 20;
+				}
+
+				// ask the user what color roll they want
+				alert("Each roll costs $20.");
+				var color = prompt("What color roll would you like")
+
+				// ask the user how many rolls they want
+				var number = prompt("How many rolls of the color you chose would you like?");
+				var newcolor = prompt("Would you like another color roll. What color would you like?");
+				var newnumber = prompt("How many rolls would you like for the new color?");
+
+
+					function newsubtotal(moreRolls){
+						return moreRolls = 20 * newnumber
+					}
+
+					var totalCost = calculateSubtotal(number) + calculateSubtotal(newnumber);
+
+					var totalNum = Number(number) + Number(newnumber);
+
+
+
+
+
+
+				// print the result using your function
+				document.write("<tr><td>" + color + "</td><td>" + number + "</td><td> $" + (calculateSubtotal(number)) + "</td></tr>");
+				document.write("<tr><td>" + newcolor + "</td><td>" + newnumber + "</td><td> $" + (newsubtotal(newnumber)));
+				document.write ("<tr><td>" + " " + "</td><td>" + totalNum + "</td><td>" + "$" + totalCost + "</td></tr>");
+		</script>
+</table>
+</body>
+</html>

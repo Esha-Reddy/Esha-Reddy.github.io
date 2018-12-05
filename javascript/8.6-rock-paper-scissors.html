@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.6 - Rock, Paper, Scissors, Lizard, Spock</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		function compare(playerChoice, computerChoice) {
+			// compare inputs
+				//tie
+							if (playerChoice === computerChoice){
+								alert("And the winner is... Nobody, it is a tie!");}
+				//user choses rock
+							else if (playerChoice === "rock"){
+										if (computerChoice === "paper"){
+										alert("you lose");
+									} else if (computerChoice === "scissors"){
+										alert("you win");
+									} else if (computerChoice === "spock"){
+										alert("you lose");
+									} else {
+										alert("you win");
+									}
+								}
+				//user choses scissors
+				else if (playerChoice === "scissors"){
+							if (computerChoice === "paper"){
+							alert("you lose");
+						} else if (computerChoice === "rock"){
+							alert("you win");
+						} else if (computerChoice === "spock"){
+							alert("you lose");
+						} else {
+							alert("you win");
+						}
+					}
+				//user choses paper
+				else if (playerChoice === "paper"){
+								if (computerChoice === "scissors"){
+								alert("you lose");
+							} else if (computerChoice === "rock"){
+								alert("you win");
+							} else if (computerChoice === "spock"){
+								alert("you lose");
+							} else {
+								alert("you win");
+							}
+						}
+						//user choses spock
+						else if (playerChoice === "spock"){
+									if (computerChoice === "paper"){
+									alert("you lose");
+								} else if (computerChoice === "rock"){
+									alert("you win");
+								} else if (computerChoice === "paper"){
+									alert("you lose");
+								} else {
+									alert("you win");
+								}
+							}
+							//user choses lizard
+							else if (playerChoice === "lizard"){
+										if (computerChoice === "paper"){
+										alert("you lose");
+									} else if (computerChoice === "rock"){
+										alert("you win");
+									} else if (computerChoice === "spock"){
+										alert("you lose");
+									} else {
+										alert("you win");
+									}
+								}
+
+
+
+
+
+
+			// print who wins
+
+
+		}
+		// ask player for their choice
+		var p = prompt("Type either Rock, Paper, Scissors, Lizard, or Spock.").toLowerCase();
+
+		// calculate computer choice
+		var c = Math.random();
+		if(c < 0.2){
+			c = "rock";
+		}else if (c < 0.4){
+			c = "paper";
+		}else if (c < 0.6){
+			c = "scissors";
+		}else if (c < 0.8){
+			c = "lizard";
+		}else {
+			c = "spock";
+		}
+		alert("The computer chose " + c);
+		compare(p, c);
+	</script>
+</body>
+</html>
